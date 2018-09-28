@@ -10,15 +10,15 @@ const YD = new YoutubeMp3Downloader({
     progressTimeout: 2000,
 });
 
-YD.on('finished', function(err, data) {
+YD.on('finished', (err, data) => {
     console.log(`Finished downloading video: ${data.videoTitle}`);
 });
 
-YD.on('error', function(error) {
+YD.on('error', (error) => {
     console.log(`Error downloading video: ${error}`);
 });
 
-YD.on('progress', function(progress) {
+YD.on('progress', (progress) => {
     console.log(`Progress for video: ${JSON.stringify(progress)}`);
 });
 
