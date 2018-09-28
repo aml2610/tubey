@@ -2,10 +2,11 @@ const ytlist = require('youtube-playlist');
 
 const grabIdsFromPlaylist = async playlistUrl => {
     const result = await ytlist(playlistUrl, 'id');
+    const playlist = result.data.playlist;
 
-    console.log('Grabbed ids to download:', result.data.playlist);
+    console.log(`Grabbed ${playlist.length} ids to download`);
 
-    return result.data.playlist;
+    return playlist;
 };
 
 module.exports = {

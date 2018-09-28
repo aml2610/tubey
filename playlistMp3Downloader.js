@@ -9,12 +9,11 @@ const downloadVideos = async playlistUrl => {
           downloadVideo(id);
       }
   } catch (err) {
-      console.log(`An error occured: ${err} - ${JSON.stringify(err)}. Restart the program`);
+      console.log(`An error occured: ${err} - ${JSON.stringify(err)}`);
+      console.log('Restart the program, use a valid playlist url :)');
       process.exit(1);
   }
 };
-
-downloadVideos('https://www.youtube.com/playlist?list=PLg7Fb71wbhKIiE7_2O55vJdKJkZgG0N6G');
 
 module.exports = {
     downloadVideos,
