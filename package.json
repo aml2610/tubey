@@ -2,6 +2,7 @@
   "name": "tubey",
   "version": "0.0.1",
   "dependencies": {
-    "youtube-mp3-downloader": "^0.5.3"
+    "youtube-mp3-downloader": "^0.5.3",
+    "youtube-playlist": "^1.0.1"
   }
 }
