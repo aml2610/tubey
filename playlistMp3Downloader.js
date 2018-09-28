@@ -10,7 +10,7 @@ const downloadVideos = async playlistUrl => {
       }
   } catch (err) {
       console.log(`An error occured: ${err} - ${JSON.stringify(err)}`);
-      console.log('Restart the program, use a valid playlist url :)');
+      console.log('Restart the program, use a valid playlist url, make sure playlist is public :)');
       process.exit(1);
   }
 };
