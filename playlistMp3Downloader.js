@@ -5,7 +5,7 @@ const downloadVideos = async playlistId => {
   try {
       const videosToDownload = await grabIdsFromPlaylist(playlistId);
 
-      console.log(`Grabbed ids from playlist: ${videosToDownload}`);
+      console.log(`Grabbed ids from playlist: ${videosToDownload.length}`);
 
       for (let id of videosToDownload) {
           downloadVideo(id);
